@@ -5,7 +5,7 @@ from pydantic import BaseModel
 from typing import Dict, Union
 import os
 
-from db_query import save_chat, get_chats, update_chat_by_id, delete_chat_by_id
+from db_query import save_chat, get_chats
 from open_ai import get_chat_response  # PDF 기반 응답 생성 함수
 
 react_address = os.getenv('REACT_APP_API_BASE_URL')
